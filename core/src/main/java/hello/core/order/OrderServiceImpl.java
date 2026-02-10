@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class OrderServiceImpl implements OrderService{
 
+    // final 을 넣으면 초기화 누락한 거 알 수 있음
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
 
